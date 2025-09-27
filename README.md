@@ -4,7 +4,7 @@
 
 ### Embedded C programming
 
-* [blink LED](Tiva%20C%20series) Texas Instrument Tiva C series microcontroller
+* [blink LED](Tiva%20C%20series/project%200/) Texas Instrument Tiva C series microcontroller
 <!-- * [Calculator](PlatformIO/Projects/Calculator/) VScode extension PlatformIO -->
 
 #### Datasheets
