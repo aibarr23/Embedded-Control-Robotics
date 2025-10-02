@@ -1,0 +1,4 @@
+v 3
+file . "hello.vhdl" "20251002182544.000" "20251002132616.512":
+  entity hello_world at 7( 162) + 0 on 13;
+  architecture behavior of hello_world at 13( 318) + 0 on 14;
