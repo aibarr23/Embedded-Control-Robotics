@@ -1,0 +1,9 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=source_dir
+command=
+source_dir=C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM
+work_dir=
+

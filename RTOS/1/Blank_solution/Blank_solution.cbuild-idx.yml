@@ -1,0 +1,17 @@
+build-idx:
+  generated-by: csolution version 2.11.0
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: Blank_solution.csolution.yml
+  cbuild-run: out/Blank_solution+TM4C123GH6PM.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: Project0/Project0.cproject.yml
+  cbuilds:
+    - cbuild: out/Project0/TM4C123GH6PM/Debug/Project0.Debug+TM4C123GH6PM.cbuild.yml
+      project: Project0
+      configuration: .Debug+TM4C123GH6PM
+      messages:
+        info:
+          - Blank_solution.cbuild-pack.yml - file is already up-to-date
+          - Blank_solution+TM4C123GH6PM.cbuild-run.yml - file is already up-to-date
+          - Project0.Debug+TM4C123GH6PM.cbuild.yml - file is already up-to-date

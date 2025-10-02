@@ -1,0 +1,40 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM-executes"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM-executes.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-executes.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-build.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-configure.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-patch.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-update.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-download.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Project0.Debug+TM4C123GH6PM"
+		],
+		"name" : "Project0.Debug+TM4C123GH6PM-executes"
+	}
+}

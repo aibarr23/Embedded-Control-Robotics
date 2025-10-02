@@ -1,0 +1,8 @@
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/database.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM-build.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM-configure.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM-executes.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM-database.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/edit_cache.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/rebuild_cache.dir

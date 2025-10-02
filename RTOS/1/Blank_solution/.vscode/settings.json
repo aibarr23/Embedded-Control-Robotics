@@ -1,0 +1,6 @@
+{
+    "debug.hideSlowPreLaunchWarning": true,
+    "files.associations": {
+        "rte_components.h": "c"
+    }
+}

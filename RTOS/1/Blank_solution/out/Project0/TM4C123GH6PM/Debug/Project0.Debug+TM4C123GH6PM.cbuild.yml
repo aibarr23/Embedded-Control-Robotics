@@ -1,0 +1,134 @@
+build:
+  generated-by: csolution version 2.11.0
+  solution: ../../../../Blank_solution.csolution.yml
+  project: ../../../../Project0/Project0.cproject.yml
+  context: Project0.Debug+TM4C123GH6PM
+  compiler: AC6
+  device: Texas Instruments::TM4C123GH6PM
+  device-pack: Keil::TM4C_DFP@1.1.0
+  device-books:
+    - name: http://www.ti.com/lsds/ti/arm/arm_cortex_m_microcontrollers/arm_cortex_m4/tm4c123x_mcus/tm4c123x-mcus-overview.page
+      title: TM4C123x Series - Overview
+    - name: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Documents/dui0553a_cortex_m4_dgug.pdf
+      title: Cortex-M4 Generic User Guide
+  processor:
+    endian: little
+    fpu: sp
+    core: Cortex-M4
+  packs:
+    - pack: ARM::CMSIS@6.2.0
+      path: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0
+    - pack: Keil::TM4C_DFP@1.1.0
+      path: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0
+  optimize: none
+  debug: on
+  misc:
+    ASM:
+      - -gdwarf-5
+      - -masm=auto
+    C:
+      - -gdwarf-5
+      - -std=gnu11
+      - -Wno-macro-redefined
+      - -Wno-pragma-pack
+      - -Wno-parentheses-equality
+      - -Wno-license-management
+    CPP:
+      - -gdwarf-5
+      - -Wno-macro-redefined
+      - -Wno-pragma-pack
+      - -Wno-parentheses-equality
+      - -Wno-license-management
+    Link:
+      - --entry=Reset_Handler
+      - --info=summarysizes
+      - --summary_stderr
+      - --diag_suppress=L6314W
+  define:
+    - TM4C123GH6PM
+    - _RTE_
+  define-asm:
+    - TM4C123GH6PM
+    - _RTE_
+  add-path:
+    - ../../../../Project0/RTE/_Debug_TM4C123GH6PM
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+    - ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+  add-path-asm:
+    - ../../../../Project0/RTE/_Debug_TM4C123GH6PM
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+    - ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+  output-dirs:
+    intdir: ../../../../tmp
+    outdir: .
+    rtedir: ../../../../Project0/RTE
+  output:
+    - type: elf
+      file: Project0.axf
+    - type: hex
+      file: Project0.hex
+    - type: map
+      file: Project0.axf.map
+  components:
+    - component: ARM::CMSIS:CORE@6.1.1
+      condition: ARMv6_7_8-M Device
+      from-pack: ARM::CMSIS@6.2.0
+      selected-by: ARM::CMSIS:CORE
+      files:
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+          category: include
+          version: 6.1.1
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Include/tz_context.h
+          category: header
+          version: 6.1.1
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Template/ARMv8-M/main_s.c
+          category: sourceC
+          attr: template
+          version: 1.1.1
+          select: Secure mode 'main' module for ARMv8-M
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Template/ARMv8-M/tz_context.c
+          category: sourceC
+          attr: template
+          version: 1.1.1
+          select: RTOS Context Management (TrustZone for ARMv8-M)
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Documentation/html/Core/index.html
+          category: doc
+          version: 6.1.1
+    - component: Keil::Device:Startup@1.0.1
+      condition: TM4C123x CMSIS
+      from-pack: Keil::TM4C_DFP@1.1.0
+      selected-by: Device:Startup
+      files:
+        - file: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123.h
+          category: header
+          version: 1.0.1
+        - file: ../../../../Project0/RTE/Device/TM4C123GH6PM/startup_TM4C123.s
+          category: source
+          attr: config
+          version: 1.0.0
+        - file: ../../../../Project0/RTE/Device/TM4C123GH6PM/system_TM4C123.c
+          category: source
+          attr: config
+          version: 1.0.1
+  linker:
+    script: ../../../../Project0/RTE/Device/TM4C123GH6PM/ac6_linker_script.sct.src
+    regions: ../../../../Project0/RTE/Device/TM4C123GH6PM/regions_TM4C123GH6PM.h
+  groups:
+    - group: Source Files
+      files:
+        - file: ../../../../Project0/main.c
+          category: sourceC
+  constructed-files:
+    - file: ../../../../Project0/RTE/_Debug_TM4C123GH6PM/RTE_Components.h
+      category: header
+  licenses:
+    - license: <unknown>
+      packs:
+        - pack: Keil::TM4C_DFP@1.1.0
+      components:
+        - component: Keil::Device:Startup@1.0.1
+    - license: Apache-2.0
+      packs:
+        - pack: ARM::CMSIS@6.2.0
+      components:
+        - component: ARM::CMSIS:CORE@6.1.1

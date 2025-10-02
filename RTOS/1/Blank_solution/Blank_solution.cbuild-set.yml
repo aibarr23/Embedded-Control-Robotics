@@ -1,0 +1,5 @@
+cbuild-set:
+  generated-by: vscode-cmsis-csolution version 1.60.0
+  environment: {}
+  contexts:
+    - context: Project0.Debug+TM4C123GH6PM

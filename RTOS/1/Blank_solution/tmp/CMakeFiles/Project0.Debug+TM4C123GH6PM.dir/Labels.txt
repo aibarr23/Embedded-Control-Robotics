@@ -1,0 +1,16 @@
+# Target labels
+ Project0.Debug+TM4C123GH6PM
+# Source files and their labels
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/CMakeFiles/Project0.Debug+TM4C123GH6PM-complete.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-build.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-configure.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-database.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-download.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-executes.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-install.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-mkdir.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-patch.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-test.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/Project0.Debug+TM4C123GH6PM/src/Project0.Debug+TM4C123GH6PM-stamp/Project0.Debug+TM4C123GH6PM-update.rule

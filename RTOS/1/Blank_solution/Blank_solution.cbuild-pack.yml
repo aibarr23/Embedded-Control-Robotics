@@ -1,0 +1,8 @@
+cbuild-pack:
+  resolved-packs:
+    - resolved-pack: ARM::CMSIS@6.2.0
+      selected-by-pack:
+        - ARM::CMSIS
+    - resolved-pack: Keil::TM4C_DFP@1.1.0
+      selected-by-pack:
+        - Keil::TM4C_DFP

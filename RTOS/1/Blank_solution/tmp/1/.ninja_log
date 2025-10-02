@@ -1,0 +1,13 @@
+# ninja log v6
+9	112	7810475557374276	CMakeFiles/database	cdf2aca4a35455bc
+9	112	7810475557374276	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/1/CMakeFiles/database	cdf2aca4a35455bc
+32	466	7810479962555914	CMakeFiles/Keil_Device_Startup_1_0_1.dir/953af1b4b6ed3dd463abca4bbc803328/RTOS/1/Blank_solution/Project0/RTE/Device/TM4C123GH6PM/system_TM4C123.o	4a96c28027223d67
+25	1008	7810479962490810	CMakeFiles/Keil_Device_Startup_1_0_1.dir/953af1b4b6ed3dd463abca4bbc803328/RTOS/1/Blank_solution/Project0/RTE/Device/TM4C123GH6PM/startup_TM4C123.o	dc11a223dd12316c
+34	201	7810480826841108	CMakeFiles/Group_Source_Files.dir/C_/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/Project0/main.o	de4250daffbb0574
+203	10464	7810480923694272	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/out/Project0/TM4C123GH6PM/Debug/Project0.axf	ae087a1de6c1c6f5
+203	10464	7810480923694272	ac6_linker_script.sct	ae087a1de6c1c6f5
+203	10464	7810480923694272	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/1/ac6_linker_script.sct	ae087a1de6c1c6f5
+35	123	7810480932640685	CMakeFiles/database	cdf2aca4a35455bc
+35	123	7810480932640685	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/1/CMakeFiles/database	cdf2aca4a35455bc
+9	99	7810481937106436	CMakeFiles/database	cdf2aca4a35455bc
+9	99	7810481937106436	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/tmp/1/CMakeFiles/database	cdf2aca4a35455bc
