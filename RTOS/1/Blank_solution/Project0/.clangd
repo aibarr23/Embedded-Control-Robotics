@@ -1,3 +1,10 @@
 CompileFlags:
   CompilationDatabase: >-
     c:\Users\aibar\Downloads\REPOSITORY\Embedded-Control-Robotics-PLC\RTOS\1\Blank_solution\out\Project0\TM4C123GH6PM\Debug
+  Add:
+    - >-
+      -IC:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/1/Blank_solution/Project0/RTE/_Debug_TM4C123GH6PM
+    - >-
+      -IC:/Users/aibar/AppData/Local/stm32cube/packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+    - >-
+      -IC:/Users/aibar/AppData/Local/stm32cube/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
