@@ -13,7 +13,7 @@
 
 ### FPGA verilog VHDL programming
 
-* [verilog](VERILOG) Icarus Verilog
+* [verilog](FPGA/VERILOG/) Icarus Verilog
 
 &nbsp;
 
@@ -42,4 +42,5 @@
 ### SCADA
 
 * WIP
+
 
