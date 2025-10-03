@@ -1,0 +1,80 @@
+project:
+  packs:
+    - pack: Keil::TM4C_DFP@^1.1.0
+  setups:
+    - setup: Options for dbg
+      processor:
+        fpu: sp
+      add-path:
+        - ../ek-tm4c123gxl
+        - ../CMSIS/Include
+      debug: "on"
+      define:
+        - Stack_Size: "2048"
+        - Heap_Size: "0"
+      define-asm:
+        - Stack_Size: "2048"
+        - Heap_Size: "0"
+      misc:
+        - C:
+            - -std=c11
+          C-CPP:
+            - -fno-rtti
+            - -funsigned-char
+            - -fshort-enums
+            - -fshort-wchar
+            - -ffunction-sections
+            - -Wno-packed
+            - -Wno-missing-variable-declarations
+            - -Wno-missing-prototypes
+            - -Wno-missing-noreturn
+            - -Wno-sign-conversion
+            - -Wno-nonportable-include-path
+            - -Wno-reserved-id-macro
+            - -Wno-unused-macros
+            - -Wno-documentation-unknown-command
+            - -Wno-documentation
+            - -Wno-license-management
+            - -Wno-parentheses-equality
+            - -Wno-declaration-after-statement
+          CPP:
+            - -xc++
+            - -std=c++11
+            - -fno-exceptions
+          ASM:
+            - -masm=auto
+          Link:
+            - --map
+            - --load_addr_map_info
+            - --xref
+            - --callgraph
+            - --symbols
+            - --info sizes
+            - --info totals
+            - --info unused
+            - --info veneers
+            - --strict
+            - --summary_stderr
+            - --info summarysizes
+  linker:
+    - script: lesson.sct
+  groups:
+    - group: Source
+      files:
+        - file: main.c
+        - file: bsp.c
+        - file: bsp.h
+    - group: ek-tm4c123gxl
+      files:
+        - file: ../ek-tm4c123gxl/arm/startup_TM4C123GH6PM.s
+        - file: ../ek-tm4c123gxl/README.txt
+        - file: ../ek-tm4c123gxl/system_TM4C123GH6PM.c
+        - file: ../ek-tm4c123gxl/system_TM4C123GH6PM.h
+        - file: ../ek-tm4c123gxl/TM4C123GH6PM.h
+    - group: CMSIS
+      files:
+        - file: ../CMSIS/Include/cmsis_armclang.h
+        - file: ../CMSIS/Include/cmsis_compiler.h
+        - file: ../CMSIS/Include/cmsis_version.h
+        - file: ../CMSIS/Include/core_cm4.h
+        - file: ../CMSIS/Include/mpu_armv7.h

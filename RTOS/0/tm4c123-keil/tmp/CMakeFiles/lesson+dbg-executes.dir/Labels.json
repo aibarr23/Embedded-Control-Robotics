@@ -1,0 +1,40 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/CMakeFiles/lesson+dbg-executes"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/CMakeFiles/lesson+dbg-executes.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-executes.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-build.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-configure.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-patch.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-update.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-download.rule"
+		},
+		{
+			"file" : "C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lesson+dbg"
+		],
+		"name" : "lesson+dbg-executes"
+	}
+}

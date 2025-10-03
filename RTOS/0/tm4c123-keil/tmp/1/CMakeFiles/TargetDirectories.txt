@@ -1,0 +1,6 @@
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/database.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/lesson+dbg.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/Group_Source.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/Group_ek-tm4c123gxl.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/edit_cache.dir
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/rebuild_cache.dir

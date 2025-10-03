@@ -1,0 +1,13 @@
+# ninja log v6
+37	211	7811601855232238	lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-mkdir	9ed0d573eaa51c76
+37	211	7811601855232238	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-mkdir	9ed0d573eaa51c76
+211	297	7811601856092121	lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-download	8a97a9f20e2ba525
+211	297	7811601856092121	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-download	8a97a9f20e2ba525
+297	384	7811601856962864	lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-update	1ddebc03d4f06672
+297	384	7811601856962864	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-update	1ddebc03d4f06672
+398	539	7811601858483674	lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-patch	2a72af1f51bb7183
+398	539	7811601858483674	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-patch	2a72af1f51bb7183
+539	64045	7811602493555023	lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-configure	da35c9442a718abe
+539	64045	7811602493555023	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-configure	da35c9442a718abe
+64046	64518	7811602493654982	lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-database	43858fa8595bb975
+64046	64518	7811602493654982	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-database	43858fa8595bb975

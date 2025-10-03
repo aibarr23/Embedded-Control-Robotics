@@ -1,0 +1,16 @@
+build-idx:
+  generated-by: csolution version 2.11.0
+  csolution: lesson.csolution.yml
+  cbuild-run: out/lesson+dbg.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: lesson.cproject.yml
+  cbuilds:
+    - cbuild: out/lesson/dbg/lesson+dbg.cbuild.yml
+      project: lesson
+      configuration: +dbg
+      messages:
+        info:
+          - lesson.cbuild-pack.yml - file generated successfully
+          - lesson+dbg.cbuild-run.yml - file generated successfully
+          - lesson+dbg.cbuild.yml - file generated successfully

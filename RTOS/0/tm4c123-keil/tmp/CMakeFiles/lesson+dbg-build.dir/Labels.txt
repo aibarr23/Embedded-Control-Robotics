@@ -1,0 +1,11 @@
+# Target labels
+ lesson+dbg
+# Source files and their labels
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/CMakeFiles/lesson+dbg-build
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/CMakeFiles/lesson+dbg-build.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-build.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-configure.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-patch.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-update.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-download.rule
+C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/lesson+dbg/src/lesson+dbg-stamp/lesson+dbg-mkdir.rule

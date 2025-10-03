@@ -1,0 +1,39 @@
+cbuild-run:
+  generated-by: csolution version 2.11.0
+  solution: ../lesson.csolution.yml
+  target-type: dbg
+  compiler: AC6
+  device: Texas Instruments::TM4C123GH6PM
+  device-pack: Keil::TM4C_DFP@1.1.0
+  output:
+    - file: lesson/dbg/lesson.axf
+      info: generate by lesson+dbg
+      type: elf
+      load: image+symbols
+  system-resources:
+    memory:
+      - name: IROM1
+        access: rx
+        start: 0x00000000
+        size: 0x00040000
+        from-pack: Keil::TM4C_DFP@1.1.0
+      - name: IRAM1
+        access: rwx
+        start: 0x20000000
+        size: 0x00008000
+        from-pack: Keil::TM4C_DFP@1.1.0
+  system-descriptions:
+    - file: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/SVD/TM4C123/TM4C123GH6PM.svd
+      type: svd
+  debugger:
+    name: CMSIS-DAP@pyOCD
+    protocol: swd
+    clock: 10000000
+    gdbserver:
+      - port: 3333
+  programming:
+    - algorithm: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Flash/TM4C123_256.FLM
+      start: 0x00000000
+      size: 0x00040000
+      ram-start: 0x20000000
+      ram-size: 0x00008000

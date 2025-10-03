@@ -1,0 +1,140 @@
+build:
+  generated-by: csolution version 2.11.0
+  solution: ../../../lesson.csolution.yml
+  project: ../../../lesson.cproject.yml
+  context: lesson+dbg
+  compiler: AC6
+  device: Texas Instruments::TM4C123GH6PM
+  device-pack: Keil::TM4C_DFP@1.1.0
+  device-books:
+    - name: http://www.ti.com/lsds/ti/arm/arm_cortex_m_microcontrollers/arm_cortex_m4/tm4c123x_mcus/tm4c123x-mcus-overview.page
+      title: TM4C123x Series - Overview
+    - name: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Documents/dui0553a_cortex_m4_dgug.pdf
+      title: Cortex-M4 Generic User Guide
+  processor:
+    endian: little
+    fpu: sp
+    core: Cortex-M4
+  packs:
+    - pack: Keil::TM4C_DFP@1.1.0
+      path: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0
+  optimize: debug
+  debug: on
+  misc:
+    ASM:
+      - -masm=auto
+    C:
+      - -std=c11
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+      - -Wno-declaration-after-statement
+    CPP:
+      - -xc++
+      - -std=c++11
+      - -fno-exceptions
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+      - -Wno-declaration-after-statement
+    Link:
+      - --map
+      - --load_addr_map_info
+      - --xref
+      - --callgraph
+      - --symbols
+      - --info sizes
+      - --info totals
+      - --info unused
+      - --info veneers
+      - --strict
+      - --summary_stderr
+      - --info summarysizes
+  define:
+    - Stack_Size: 2048
+    - Heap_Size: 0
+    - TM4C123GH6PM
+  define-asm:
+    - Stack_Size: 2048
+    - Heap_Size: 0
+    - TM4C123GH6PM
+  add-path:
+    - ../../../../ek-tm4c123gxl
+    - ../../../../CMSIS/Include
+    - ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+  add-path-asm:
+    - ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+  output-dirs:
+    intdir: ../../../tmp
+    outdir: .
+    rtedir: ../../../RTE
+  output:
+    - type: elf
+      file: lesson.axf
+  linker:
+    script: ../../../lesson.sct
+  groups:
+    - group: Source
+      files:
+        - file: ../../../main.c
+          category: sourceC
+        - file: ../../../bsp.c
+          category: sourceC
+        - file: ../../../bsp.h
+          category: header
+    - group: ek-tm4c123gxl
+      files:
+        - file: ../../../../ek-tm4c123gxl/arm/startup_TM4C123GH6PM.s
+          category: sourceAsm
+        - file: ../../../../ek-tm4c123gxl/README.txt
+          category: doc
+        - file: ../../../../ek-tm4c123gxl/system_TM4C123GH6PM.c
+          category: sourceC
+        - file: ../../../../ek-tm4c123gxl/system_TM4C123GH6PM.h
+          category: header
+        - file: ../../../../ek-tm4c123gxl/TM4C123GH6PM.h
+          category: header
+    - group: CMSIS
+      files:
+        - file: ../../../../CMSIS/Include/cmsis_armclang.h
+          category: header
+        - file: ../../../../CMSIS/Include/cmsis_compiler.h
+          category: header
+        - file: ../../../../CMSIS/Include/cmsis_version.h
+          category: header
+        - file: ../../../../CMSIS/Include/core_cm4.h
+          category: header
+        - file: ../../../../CMSIS/Include/mpu_armv7.h
+          category: header
+  licenses:
+    - license: <unknown>
+      packs:
+        - pack: Keil::TM4C_DFP@1.1.0
