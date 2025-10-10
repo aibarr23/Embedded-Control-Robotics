@@ -11,6 +11,6 @@ build-idx:
       configuration: +dbg
       messages:
         info:
-          - lesson.cbuild-pack.yml - file generated successfully
-          - lesson+dbg.cbuild-run.yml - file generated successfully
-          - lesson+dbg.cbuild.yml - file generated successfully
+          - lesson.cbuild-pack.yml - file is already up-to-date
+          - lesson+dbg.cbuild-run.yml - file is already up-to-date
+          - lesson+dbg.cbuild.yml - file is already up-to-date

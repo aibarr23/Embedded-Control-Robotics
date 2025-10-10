@@ -2,65 +2,94 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "CMSIS_DAP@pyOCD (launch)",
-            "type": "gdbtarget",
+            "name": "Debug (OpenOCD)",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/blinky.elf",
             "request": "launch",
-            "cwd": "${workspaceFolder}/",
-            "program": "out\\lesson\\dbg\\lesson.axf",
-            "gdb": "arm-none-eabi-gdb",
-            "preLaunchTask": "CMSIS Load",
-            "initCommands": [
-                "monitor reset halt",
-                "tbreak main"
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "interface": "swd",
+            "device": "TM4C123GH6PM",
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceRoot}/svd/TM4C123GH6PM.svd",
+            "configFiles": [
+                "board/ek-tm4c123gxl.cfg"
             ],
-            "customResetCommands": [
-                "monitor reset halt",
-                "tbreak main",
-                "continue"
+            "preLaunchCommands": [
+                "set mem inaccessible-by-default off",
+                "monitor reset"
             ],
-            "target": {
-                "server": "pyocd",
-                "serverParameters": [
-                    "gdbserver",
-                    "--probe",
-                    "cmsisdap:",
-                    "--connect",
-                    "attach",
-                    "--cbuild-run",
-                    "${command:cmsis-csolution.getCbuildRunFile}",
-                    "--quiet",
-                    "--log",
-                    "*.cbuild_run,*server=info"
-                ],
-                "port": "3333"
-            },
-            "cmsis": {
-                "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
-                "updateConfiguration": "auto"
-            }
+            "postLaunchCommands": [
+                "monitor reset init",
+                "monitor sleep 200"
+            ]
         },
         {
-            "name": "CMSIS_DAP@pyOCD (attach)",
-            "type": "gdbtarget",
-            "request": "attach",
-            "cwd": "${workspaceFolder}/",
-            "program": "out\\lesson\\dbg\\lesson.axf",
-            "gdb": "arm-none-eabi-gdb",
-            "initCommands": [
-                ""
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "c:/ti/ccs910/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/binarm-none-eabi-gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "./bin/executable.elf",
+            "name": "Debug with OpenOCD",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [],
+            "searchDir": [],
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none"
+        },
+
+        {
+            "name": "Arm Debugger",
+            "type": "arm-debugger",
+            "request": "launch",
+            "connectionAddress": "${command:device-manager.getSerialNumber}",
+            "programs": [
+                "${command:arm-debugger.getApplicationFile}"
             ],
-            "customResetCommands": [
-                "monitor reset halt",
-                "tbreak main",
-                "continue"
+            "cmsisPack": "Keil::TM4C_DFP@1.1.0",
+            "deviceName": "TM4C123GH6PM",
+            "processorName": "${command:cmsis-csolution.getProcessorName}",
+            "connectionType": "CMSIS-DAP",
+            "programMode": "flash"
+        },
+        {
+            "name": "CMSIS-DAP@Arm-Debugger (launch)",
+            "type": "arm-debugger",
+            "request": "launch",
+            "connectionAddress": "${command:device-manager.getSerialNumber}",
+            "connectionType": "CMSIS-DAP",
+            "programs": [
+                "${command:cmsis-csolution.getBinaryFiles}"
             ],
-            "target": {
-                "port": "3333"
-            },
-            "cmsis": {
-                "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
-                "updateConfiguration": "auto"
-            }
+            "cmsisPack": "Keil::TM4C_DFP@1.1.0",
+            "deviceName": "TM4C123GH6PM",
+            "processorName": "${command:cmsis-csolution.getProcessorName}",
+            "workspaceFolder": "${workspaceFolder}/",
+            "programMode": "flash"
         }
     ]
 }

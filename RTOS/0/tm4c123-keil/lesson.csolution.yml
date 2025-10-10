@@ -6,5 +6,13 @@ solution:
     - type: dbg
       device: TM4C123GH6PM
       optimize: debug
+      target-set:
+        - set:
+          images:
+            - project-context: lesson
+          debugger:
+            name: CMSIS-DAP@Arm-Debugger
   projects:
     - project: lesson.cproject.yml
+  packs:
+    - pack: Keil::TM4C_DFP@1.1.0

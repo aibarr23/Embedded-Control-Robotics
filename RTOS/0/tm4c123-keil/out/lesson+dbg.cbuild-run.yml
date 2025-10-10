@@ -2,6 +2,7 @@ cbuild-run:
   generated-by: csolution version 2.11.0
   solution: ../lesson.csolution.yml
   target-type: dbg
+  target-set: <default>
   compiler: AC6
   device: Texas Instruments::TM4C123GH6PM
   device-pack: Keil::TM4C_DFP@1.1.0
@@ -26,11 +27,7 @@ cbuild-run:
     - file: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/SVD/TM4C123/TM4C123GH6PM.svd
       type: svd
   debugger:
-    name: CMSIS-DAP@pyOCD
-    protocol: swd
-    clock: 10000000
-    gdbserver:
-      - port: 3333
+    name: CMSIS-DAP@Arm-Debugger
   programming:
     - algorithm: ${CMSIS_PACK_ROOT}/Keil/TM4C_DFP/1.1.0/Flash/TM4C123_256.FLM
       start: 0x00000000

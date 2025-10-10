@@ -1,3 +1,18 @@
 # ninja log v6
-8	241	7811602497162913	CMakeFiles/database	711c946b9bdcb901
-8	241	7811602497162913	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/database	711c946b9bdcb901
+5	136	7814097863282404	CMakeFiles/database	123366736b7cb75e
+5	136	7814097863282404	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/database	123366736b7cb75e
+434	16899	7813944155275446	CMakeFiles/Group_Source.dir/C_/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/main.o	c5464e083f011d6f
+16901	24370	7813944319934490	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/out/lesson/dbg/lesson.axf	426aeb6351cf527
+585	1585	7812959772313493	CMakeFiles/Group_ek-tm4c123gxl.dir/C_/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/ek-tm4c123gxl/system_TM4C123GH6PM.o	278915bc367a8c0
+575	2401	7812959772213518	CMakeFiles/Group_ek-tm4c123gxl.dir/C_/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/ek-tm4c123gxl/arm/startup_TM4C123GH6PM.o	3f1239eb7d80820f
+21	755	7813109684267850	CMakeFiles/Group_Source.dir/C_/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/bsp.o	40cf7bd4a2225b9c
+15	90	7814161448465689	CMakeFiles/database	711c946b9bdcb901
+15	90	7814161448465689	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/database	711c946b9bdcb901
+70	708	7814167817896303	CMakeFiles/database	711c946b9bdcb901
+70	708	7814167817896303	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/database	711c946b9bdcb901
+6	578	7814170209809739	CMakeFiles/database	711c946b9bdcb901
+6	578	7814170209809739	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/database	711c946b9bdcb901
+6828	8498	7814209978779714	CMakeFiles/database	711c946b9bdcb901
+6828	8498	7814209978779714	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/database	711c946b9bdcb901
+3988	4079	7814907908902787	CMakeFiles/database	711c946b9bdcb901
+3988	4079	7814907908902787	C:/Users/aibar/Downloads/REPOSITORY/Embedded-Control-Robotics-PLC/RTOS/0/tm4c123-keil/tmp/1/CMakeFiles/database	711c946b9bdcb901
