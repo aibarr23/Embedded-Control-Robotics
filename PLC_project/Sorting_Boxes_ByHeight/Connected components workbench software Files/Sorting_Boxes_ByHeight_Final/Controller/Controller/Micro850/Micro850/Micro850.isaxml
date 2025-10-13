@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource FileVersion="200.00.005" Name="Micro850" ResourceNb="1" ElementGuid="27c49cbe-c493-4f27-b592-680b5f11723b" Address="@1" Comment="" SingleTextLine="" GenDebugInfo="false" Password="" ReadOnly="false" UsePrjPassword="false" Code="TicCode">
+  <Properties Test="true" TrigCycle="false" CyTiming="0" DeErrors="true" NbStErrors="16" ExecMode="true" EmbedTable="true" TypeEmbedTable="1" EmbedSource="true" TypeEmbedSource="0" SimulationCode="false" SfcGain="8" SfcOffset="18" EmbeddedSfc="false" ReadableImage="false" RealImage="false" LocExp="true" unlab="false" AriOpe="true" BooOpe="true" BooExp="true" GloExp="true" VarCpy="true" Uncod="true" MapFile="false" DumpPou="false" DumpConfig="false" DumpNetwork="false" CompileIncrementally="true" LinkIncrementally="true" CheckArray="true" ArrStr="true" OnlineMemory="184320" OnlineMemoryVariable="2048" FunctionInternalStateEnable="true" FbdBehaviorMode="1" OnlineMaxExtraPous="20" IsDisableAccessFBLocalVar="true" EnableCVT="false" MemRetain="RETAIN" ReduceBooleanExpressionEvaluation="false" IsIndirectBitAccessValidation="true" CyUsTiming="0" OnlineMemorySfc="20" LdBranchStackTemporaryVariableCreationEnable="true" />
+  <Pous>
+    <Program Name="Prog2" ElementGuid="0fd9482d-324a-46e6-a707-221699ef023f" Language="LD" CustomFbd="0" Is1499="false" />
+  </Pous>
+  <GlobalVars>
+    <Variable Name="__SYSVA_TCYWDG" Comment="Software Watchdog" Address="" Alias="" DataType="UDINT" InitialValue="2000" Modifier="NonRetain" Kind="VarGlobal" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="__SYSVA_USER_DATA_LOST" Comment="User data lost" Address="" Alias="" DataType="BOOL" InitialValue="FALSE" Modifier="NonRetain" Kind="VarGlobal" AccessRights="ReadWrite" Attributes="32501" />
+    <Variable Name="BOOL_IN_0" Comment="" Address="1" Alias="High_sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_1" Comment="" Address="1" Alias="Low_sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_2" Comment="" Address="1" Alias="Pallet_sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_3" Comment="" Address="1" Alias="Loaded Capactive sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_4" Comment="" Address="1" Alias="Left_entry Retro Sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_5" Comment="" Address="1" Alias="Left_exit Sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_6" Comment="" Address="1" Alias="Right_entry Retro Sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_7" Comment="" Address="1" Alias="Right_exit Sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_8" Comment="" Address="1" Alias="Start Pushbutton" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_0" Comment="" Address="1" Alias="Entry_conveyor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_1" Comment="" Address="1" Alias="Load" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_2" Comment="" Address="1" Alias="Unload" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_3" Comment="" Address="1" Alias="Transf_left" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_4" Comment="" Address="1" Alias="Transf_right" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_5" Comment="" Address="1" Alias="Conveyor_left" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_9" Comment="" Address="1" Alias="Reset Pushbutton" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_10" Comment="" Address="1" Alias="Stop Pushbutton" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_11" Comment="" Address="1" Alias="i_emergency" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_12" Comment="" Address="1" Alias="i_auto" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_13" Comment="" Address="1" Alias="FactoryIO_running" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_6" Comment="" Address="1" Alias="Conveyor_right" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_7" Comment="" Address="1" Alias="Start_light" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_8" Comment="" Address="1" Alias="Reset_light" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_OUT_9" Comment="" Address="1" Alias="Stop_light" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="BOOL_IN_14" Comment="" Address="1" Alias="Very High Sensor" StringSize="0" DataType="BOOL" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+    <Variable Name="INT_OUT_0" Comment="" Address="1" Alias="Counter Display" StringSize="0" DataType="INT" InitialValue="" Modifier="NonRetain" Kind="Var" AccessRights="ReadWrite" RetainFlags="" CommentFields="" Attributes="4" GroupName="" />
+  </GlobalVars>
+  <ExportedGroups />
+  <ImportedGroups />
+  <Groups />
+  <Devices>
+    <Device PackageName="AB_" DriverName="OPTIMUS_" Name="IO_Base" Index="0" NbChannels="0" IsVirtual="false" Order="1" Alias="" Comment="">
+      <DeviceList>
+        <Device Index="0" NbChannels="20" Order="0" SimpleOfComplexOrder="0">
+          <IOSymbols AllIOSymbols="true">
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="0" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="0" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_00">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="1" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="1" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_01">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="2" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="2" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_02">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="3" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="3" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_03">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="4" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="4" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_04">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="5" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="5" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_05">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="6" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="6" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_06">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="7" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="7" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_07">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="8" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="8" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_08">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="9" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="9" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_09">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="10" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="10" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_10">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="11" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="11" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_11">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="12" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="12" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_12">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="13" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="13" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_13">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="14" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="14" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_14">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="15" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="15" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_15">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="16" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="16" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_16">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="17" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="17" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_17">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="18" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="18" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_18">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="19" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="19" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DO_19">
+              <ChannelParameterInstances />
+            </IOSymbol>
+          </IOSymbols>
+        </Device>
+        <Device Index="0" NbChannels="28" Order="0" SimpleOfComplexOrder="1">
+          <IOSymbols AllIOSymbols="true">
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="0" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="0" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_00">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="1" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="1" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_01">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="2" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="2" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_02">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="3" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="3" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_03">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="4" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="4" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_04">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="5" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="5" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_05">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="6" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="6" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_06">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="7" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="7" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_07">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="8" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="8" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_08">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="9" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="9" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_09">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="10" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="10" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_10">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="11" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="11" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_11">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="12" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="12" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_12">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="13" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="13" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_13">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="14" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="14" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_14">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="15" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="15" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_15">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="16" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="16" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_16">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="17" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="17" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_17">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="18" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="18" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_18">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="19" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="19" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_19">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="20" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="20" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_20">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="21" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="21" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_21">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="22" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="22" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_22">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="23" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="23" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_23">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="24" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="24" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_24">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="25" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="25" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_25">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="26" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="26" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_26">
+              <ChannelParameterInstances />
+            </IOSymbol>
+            <IOSymbol GainA="1" GainB="1" Offset="1" Order="27" GainAf="1" GainBf="1" OffsetF="1" PhysicalOrder="27" Alias="" Comment="" Address="1" IsComplexMember="false" ConvFunctio="" SymbolName="_IO_EM_DI_27">
+              <ChannelParameterInstances />
+            </IOSymbol>
+          </IOSymbols>
+        </Device>
+      </DeviceList>
+      <IOSymbols AllIOSymbols="true" />
+    </Device>
+  </Devices>
+  <NetworkParameterValues>
+    <NetworkParameterValue NetworkName="HSD" Name="ValidityTime" Value="0" />
+    <NetworkParameterValue NetworkName="ETCP" Name="TimeOut" Value="10000" />
+  </NetworkParameterValues>
+</Resource>

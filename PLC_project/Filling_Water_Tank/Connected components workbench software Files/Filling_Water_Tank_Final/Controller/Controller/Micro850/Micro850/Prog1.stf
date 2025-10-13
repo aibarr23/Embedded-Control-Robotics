@@ -1,0 +1,47 @@
+PROGRAM Prog1
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  
+ BST  XIC  [1,0] (*BOOL_IN_0*) (*Fill PB*)
+   NXB  XIC  [1,1] (*TON_1.Redge*) (*Redg*)  XIO  [2,1] (*TON_1.Q*) (*Q*)
+ BND
+  
+ BST  OTE  [3,0] (*BOOL_OUT_0*) (*Fill Valve*)
+   NXB  
+ BST  OTE  [3,1] (*BOOL_OUT_1*) (*Filling LED Green*)
+   NXB  FB  [3,2] (*TON*) (*TON_1*) ( (*IN:IN*)(**) (**)  , (*PT:PT*)(*T#15s*) (**) ; (*Q:Q*)(**) (**)  , (*ET:ET*)(**) (**) )
+ BND
+
+ BND
+
+EOR [6,0]
+
+
+(**)
+
+SOR  [0,6] (**) (**)  XIO  [1,0] (*BOOL_IN_1*) (*Discharge PB*)  XIO  [2,0] (*BOOL_OUT_0*) (*Fill Valve*)  
+ BST  OTE  [3,0] (*BOOL_OUT_2*) (*Discharge valve*)
+   NXB  OTE  [3,1] (*BOOL_OUT_3*) (*Discharge LED Red*)
+ BND
+
+EOR [4,0]
+
+
+(**)
+
+SOR  [0,9] (**) (**)  
+ BST  XIC  [1,0] (*TON_1.Redge*) (*Redg*)
+   NXB  XIO  [1,1] (*BOOL_IN_1*) (*Discharge PB*)
+ BND
+  FB  [2,0] (*ANY_TO_LREAL*) (*24*) ( (*EN:EN*)(**) (**)  , (*i1:*)(*TON_1.ET*) (**) ; (*ENO:ENO*)(**) (**)  , (*o1:*)(*TimeValueInLREAL*) (**) )  FB  [5,0] (***) (*23*) ( (*EN:EN*)(**) (**)  , (*i1:*)(*TimeValueInLREAL*) (**)  , (*i2:*)(*0.001*) (**) ; (*ENO:ENO*)(**) (**)  , (*o1:*)(*TimerValueMul*) (**) )  FB  [8,0] (*ANY_TO_INT*) (*18*) ( (*EN:EN*)(**) (**)  , (*i1:*)(*TimerValueMul*) (**) ; (*ENO:ENO*)(**) (**)  , (*o1:*)(*TimeInInteger*) (**) )  FB  [11,0] (*1 gain*) (*19*) ( (*EN:EN*)(**) (**)  , (*i1:*)(*TimeInInteger*) (**) ; (*ENO:ENO*)(**) (**)  , (*o1:*)(*INT_OUT_0*) (**) )
+EOR [14,0]
+EOF
+#end_info
+#info= ID_MAX
+NextId=24
+#end_info
+END_PROGRAM

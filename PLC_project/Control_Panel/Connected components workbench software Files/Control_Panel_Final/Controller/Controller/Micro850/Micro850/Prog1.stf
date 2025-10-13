@@ -1,0 +1,26 @@
+PROGRAM Prog1
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  XIC  [1,0] (*BOOL_IN_1*) (*Start pb*)  XIC  [2,0] (*BOOL_IN_2*) (*Stop pb*)  
+ BST  OTE  [3,0] (*BOOL_OUT_0*) (*Start pb (light)*)
+   NXB  OTE  [3,1] (*BOOL_OUT_2*) (*Green LED*)
+ BND
+
+EOR [4,0]
+
+
+(**)
+
+SOR  [0,4] (**) (**)  XIO  [1,0] (*BOOL_IN_2*) (*Stop pb*)  XIO  [2,0] (*BOOL_IN_1*) (*Start pb*)  
+ BST  OTE  [3,0] (*BOOL_OUT_1*) (*Stop pb(light)*)
+   NXB  OTE  [3,1] (*BOOL_OUT_3*) (*Red LED*)
+ BND
+
+EOR [4,0]
+EOF
+#end_info
+END_PROGRAM

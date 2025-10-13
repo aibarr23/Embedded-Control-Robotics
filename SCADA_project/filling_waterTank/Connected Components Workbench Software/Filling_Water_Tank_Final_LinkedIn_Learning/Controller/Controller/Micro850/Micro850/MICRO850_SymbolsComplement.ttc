@@ -1,0 +1,4 @@
+[BEGIN FB INPUTS]
+I1=micro850.micro850.prog1/ton_1.in,0x12C1,BOOL
+I2=micro850.micro850.prog1/ton_1.pt,0x12C4,TIME
+[END]

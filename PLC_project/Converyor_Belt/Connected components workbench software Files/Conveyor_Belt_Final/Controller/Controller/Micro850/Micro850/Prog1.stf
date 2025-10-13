@@ -1,0 +1,48 @@
+PROGRAM Prog1
+#info= QLD
+BOF
+
+
+(**)
+
+SOR  [0,1] (**) (**)  
+ BST  XIC  [1,0] (*BOOL_IN_3*) (*Start pb*)
+   NXB  XIC  [1,1] (*BOOL_OUT_0*) (*Entrey Converyer*)
+ BND
+  XIC  [2,0] (*BOOL_IN_1*) (*Sensor B*)  XIC  [3,0] (*BOOL_IN_4*) (*Stop pb*)  
+ BST  OTE  [4,0] (*BOOL_OUT_2*) (*Start pb (Light)*)
+   NXB  
+ BST  OTE  [4,1] (*BOOL_OUT_4*) (*Green LED*)
+   NXB  OTE  [4,2] (*BOOL_OUT_0*) (*Entrey Converyer*)
+ BND
+
+ BND
+
+EOR [5,0]
+
+
+(**)
+
+SOR  [0,5] (**) (**)  
+ BST  XIO  [1,0] (*BOOL_IN_0*) (*Sensor A*)  XIC  [2,0] (*BOOL_OUT_0*) (*Entrey Converyer*)
+   NXB  
+ BST  XIC  [1,1] (*BOOL_OUT_1*) (*2nd Conveyor*)
+   NXB  XIC  [1,2] (*BOOL_IN_3*) (*Start pb*)  XIO  [2,2] (*BOOL_OUT_1*) (*2nd Conveyor*)
+ BND
+
+ BND
+  XIC  [3,0] (*BOOL_IN_1*) (*Sensor B*)  XIC  [4,0] (*BOOL_IN_4*) (*Stop pb*)  OTE  [5,0] (*BOOL_OUT_1*) (*2nd Conveyor*)
+EOR [6,0]
+
+
+(**)
+
+SOR  [0,9] (**) (**)  XIO  [1,0] (*BOOL_IN_4*) (*Stop pb*)  
+ BST  OTE  [2,0] (*BOOL_OUT_5*) (*Red LED*)
+   NXB  OTE  [2,1] (*BOOL_OUT_3*) (*Stop pb (Light)*)
+ BND
+
+EOR [3,0]
+EOF
+#end_info
+END_PROGRAM

@@ -1,1 +1,1 @@
-./dbg/miros.o: miros.c
+./dbg/miros.o: miros.c miros.h

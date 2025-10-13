@@ -1,0 +1,88 @@
+(****** QuickLD compiler *******************************)
+(****** Copyright Rockwell Automation Canada, Ltd ******)
+(****** ST *********************************************)
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,1
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+__EDTB1 := BOOL_IN_0 ;
+__EDTB2 := TON_1.REDGE AND NOT(TON_1.Q) ;
+__EDTB3 := (__EDTB1 OR __EDTB2) ;
+BOOL_OUT_0 := __EDTB3 ;
+BOOL_OUT_1 := __EDTB3 ;
+(* FB call: TON *)
+TON_1(__EDTB3, T#15S) ;
+__EDTB4 := TON_1.Q ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0001 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,6
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+__EDTB5 := NOT(BOOL_IN_1) AND NOT(BOOL_OUT_0) ;
+BOOL_OUT_2 := __EDTB5 ;
+BOOL_OUT_3 := __EDTB5 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0002 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,9
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+__EDTB6 := TON_1.REDGE ;
+__EDTB7 := NOT(BOOL_IN_1) ;
+__EDTB8 := (__EDTB6 OR __EDTB7) ;
+IF __EDTB8 THEN
+TIMEVALUEINLREAL := ANY_TO_LREAL(TON_1.ET) ;
+END_IF ;
+__MO_ANY_TO_LREAL_1 := __EDTB8 ;
+__EDTB9 := __EDTB8 ;
+IF __EDTB9 THEN
+TIMERVALUEMUL := (TIMEVALUEINLREAL * 0.001) ;
+END_IF ;
+__MO_MULT_1 := __EDTB9 ;
+__EDTB10 := __EDTB9 ;
+IF __EDTB10 THEN
+TIMEININTEGER := ANY_TO_INT(TIMERVALUEMUL) ;
+END_IF ;
+__MO_ANY_TO_INT_1 := __EDTB10 ;
+__EDTB11 := __EDTB10 ;
+IF __EDTB11 THEN
+INT_OUT_0 := (  TIMEININTEGER) ;
+END_IF ;
+__MO_1GAIN_1 := __EDTB11 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0003 ;
+
+
+(*************** Code for the end of File **************)
+__GL __LG0000 ;
+
+
+
+(*************** Local Symbols table *******************)
+(* __EDTB1 *)
+(* __EDTB2 *)
+(* __EDTB3 *)
+(* __EDTB4 *)
+(* __EDTB5 *)
+(* __EDTB6 *)
+(* __EDTB7 *)
+(* __EDTB8 *)
+(* __EDTB9 *)
+(* __EDTB10 *)
+(* __EDTB11 *)
+

@@ -1,0 +1,144 @@
+(****** QuickLD compiler *******************************)
+(****** Copyright Rockwell Automation Canada, Ltd ******)
+(****** ST *********************************************)
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,1
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+__EDTB1 := BOOL_IN_13 ;
+__EDTB2 := __EDTB1 AND BOOL_IN_8 ;
+__EDTB3 := __EDTB1 AND BOOL_OUT_0 ;
+__EDTB4 := __EDTB1 AND BOOL_OUT_5 ;
+__EDTB5 := __EDTB1 AND BOOL_OUT_6 ;
+__EDTB6 := (__EDTB4 OR __EDTB5) ;
+__EDTB7 := (__EDTB3 OR __EDTB6) ;
+__EDTB8 := (__EDTB2 OR __EDTB7) AND NOT(BOOL_IN_2) AND NOT(BOOL_IN_3) AND BOOL_IN_6 AND BOOL_IN_4 ;
+BOOL_OUT_0 := __EDTB8 ;
+BOOL_OUT_7 := __EDTB8 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0001 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,6
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+BOOL_OUT_1 := BOOL_IN_2 AND NOT(BOOL_IN_3) ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0002 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,8
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+__EDTB9 := BOOL_IN_2 AND BOOL_IN_1 AND NOT(BOOL_IN_0) ;
+__EDTB10 := SMALLBOX_LOW AND NOT(LARGEBOX_HIGH) ;
+SMALLBOX_LOW := (__EDTB9 OR __EDTB10) AND BOOL_IN_4 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0003 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,11
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+BOOL_OUT_3 := SMALLBOX_LOW AND NOT(LARGEBOX_HIGH) AND BOOL_IN_3 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0004 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,13
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+__EDTB11 := NOT(BOOL_IN_4) ;
+__EDTB12 := BOOL_OUT_5 ;
+BOOL_OUT_5 := (__EDTB11 OR __EDTB12) AND BOOL_IN_5 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0005 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,16
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+__EDTB13 := BOOL_IN_2 AND BOOL_IN_1 AND BOOL_IN_0 ;
+__EDTB14 := BOOL_IN_2 AND BOOL_IN_14 ;
+__EDTB15 := LARGEBOX_HIGH ;
+__EDTB16 := (__EDTB14 OR __EDTB15) ;
+LARGEBOX_HIGH := (__EDTB13 OR __EDTB16) AND BOOL_IN_6 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0006 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,20
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+BOOL_OUT_4 := LARGEBOX_HIGH AND BOOL_IN_3 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0007 ;
+
+
+(*************** Rung **********************************)
+(**)
+__STEPPRAGMA
+0,22
+__ENDSTEPPRAGMA
+(*Label :*)(**)
+__EDTB17 := NOT(BOOL_IN_6) ;
+__EDTB18 := BOOL_OUT_6 ;
+BOOL_OUT_6 := (__EDTB17 OR __EDTB18) AND BOOL_IN_7 ;
+
+(*************** Code for the end of Rung **************)
+__GL __LG0008 ;
+
+
+(*************** Code for the end of File **************)
+__GL __LG0000 ;
+
+
+
+(*************** Local Symbols table *******************)
+(* __EDTB1 *)
+(* __EDTB2 *)
+(* __EDTB3 *)
+(* __EDTB4 *)
+(* __EDTB5 *)
+(* __EDTB6 *)
+(* __EDTB7 *)
+(* __EDTB8 *)
+(* __EDTB9 *)
+(* __EDTB10 *)
+(* __EDTB11 *)
+(* __EDTB12 *)
+(* __EDTB13 *)
+(* __EDTB14 *)
+(* __EDTB15 *)
+(* __EDTB16 *)
+(* __EDTB17 *)
+(* __EDTB18 *)
+

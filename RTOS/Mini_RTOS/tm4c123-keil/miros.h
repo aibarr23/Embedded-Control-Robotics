@@ -30,10 +30,22 @@
 #ifndef MIROS_H
 #define MIROS_H
 
-
+/* Thread Control Block */
 typedef struct{
 	void *sp; /* stack pointer */
 	/* ... other attributes associated with a thread */
 } OSThread;
+
+typedef void (*OSThreadHandler)();
+
+void OS_init(void);
+
+/* this function must be called with interrupts DISABKED */
+void OS_sched(void);
+
+void OSThread_start(
+	OSThread *me,
+	OSThreadHandler threadHandler,
+	void *stksto, uint32_t stkSize);
 
 #endif /* MIROS_H */
