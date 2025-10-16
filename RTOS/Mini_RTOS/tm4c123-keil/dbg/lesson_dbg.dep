@@ -1,23 +1,186 @@
 Dependencies for Project 'lesson', Target 'dbg': (DO NOT MODIFY !)
 CompilerVersion: 6240000::V6.24::ARMCLANG
-F (.\main.c)(0x68E94BCF)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/main.o -MMD)
-I (miros.h)(0x68E957B9)
-I (bsp.h)(0x68E957B9)
-F (.\bsp.c)(0x68E957B9)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/bsp.o -MMD)
-I (bsp.h)(0x68E957B9)
-I (miros.h)(0x68E957B9)
+F (.\main.c)(0x68F02952)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/main.o -MMD)
+I (..\qpc\include\qpc.h)(0x68F00AB5)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+I (bsp.h)(0x68F02979)
+F (.\bsp.c)(0x68F0291C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/bsp.o -MMD)
+I (..\qpc\include\qpc.h)(0x68F00AB5)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+I (bsp.h)(0x68F02979)
 I (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x68E69770)
 I (..\CMSIS\Include\core_cm4.h)(0x68E69770)
 I (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x68E69770)
-F (.\bsp.h)(0x68E957B9)()
-F (..\ek-tm4c123gxl\arm\startup_TM4C123GH6PM.s)(0x68E69770)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"Stack_Size SETA 2048" -Wa,armasm,--pd,"Heap_Size SETA 16"-o ./dbg/startup_tm4c123gh6pm.o)
+F (.\bsp.h)(0x68F02979)()
+F (..\ek-tm4c123gxl\arm\startup_TM4C123GH6PM.s)(0x68E69770)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"Stack_Size SETA 2048" -Wa,armasm,--pd,"Heap_Size SETA 16"-o ./dbg/startup_tm4c123gh6pm.o)
 F (..\ek-tm4c123gxl\README.txt)(0x68E69770)()
-F (..\ek-tm4c123gxl\system_TM4C123GH6PM.c)(0x68E69770)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/system_tm4c123gh6pm.o -MMD)
+F (..\ek-tm4c123gxl\system_TM4C123GH6PM.c)(0x68E69770)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/system_tm4c123gh6pm.o -MMD)
 I (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x68E69770)
 I (..\CMSIS\Include\core_cm4.h)(0x68E69770)
 I (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x68E69770)
 F (..\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x68E69770)()
 F (..\ek-tm4c123gxl\TM4C123GH6PM.h)(0x68E69770)()
-F (.\miros.c)(0x68E962D2)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/miros.o -MMD)
-I (miros.h)(0x68E957B9)
-F (.\miros.h)(0x68E957B9)()
+F (..\qpc\src\qf\qep_msm.c)(0x68F00ABB)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qep_msm.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qep_hsm.c)(0x68F00ABB)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qep_hsm.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_act.c)(0x68F00ABB)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_act.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_actq.c)(0x68F00ABB)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_actq.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_defer.c)(0x68F00ABC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_defer.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_dyn.c)(0x68F00ABC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_dyn.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_mem.c)(0x68F00ABC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_mem.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_ps.c)(0x68F00ABC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_ps.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_qact.c)(0x68F00ABC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_qact.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_qeq.c)(0x68F00ABC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_qeq.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_qmact.c)(0x68F00ABC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_qmact.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qf\qf_time.c)(0x68F00ABC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qf_time.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qxk\qxk.c)(0x68F028F7)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qxk.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qxk\qxk_mutex.c)(0x68F00ABD)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qxk_mutex.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qxk\qxk_sema.c)(0x68F00ABE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qxk_sema.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\src\qxk\qxk_xthr.c)(0x68F00ABE)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qxk_xthr.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
+I (..\qpc\include\qs_dummy.h)(0x68F00AB6)
+F (..\qpc\ports\arm-cm\qxk\armclang\qxk_port.c)(0x68F00ABA)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../qpc/include -I ../qpc/ports/arm-cm/qxk/armclang -I ../ek-tm4c123gxl -I ../CMSIS/Include -Wno-declaration-after-statement-IC:/Users/aibar/AppData/Local/arm/packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-D__UVISION_VERSION="543" -DTM4C123GH6PM-o ./dbg/qxk_port.o -MMD)
+I (..\qpc\ports\arm-cm\qxk\armclang\qp_port.h)(0x68F00ABA)
+I (..\qpc\include\qequeue.h)(0x68F00AB5)
+I (..\qpc\include\qmpool.h)(0x68F00AB5)
+I (..\qpc\include\qp.h)(0x68F00AB5)
+I (..\qpc\include\qxk.h)(0x68F00AB6)
+I (..\qpc\include\qp_pkg.h)(0x68F00AB5)
+I (..\qpc\include\qsafe.h)(0x68F00AB6)
