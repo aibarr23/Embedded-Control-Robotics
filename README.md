@@ -16,7 +16,6 @@
 * [verilog](FPGA/VERILOG/) Icarus Verilog
 
 &nbsp;
-
 &nbsp;
 
 ## Robotics
@@ -42,5 +41,3 @@
 ### SCADA
 
 * WIP
-
-

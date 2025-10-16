@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMSIS Load+Run",
+            "type": "arm-debugger.flash",
+            "connectionAddress": "${command:device-manager.getSerialNumber}",
+            "connectionType": "CMSIS-DAP",
+            "programs": "${command:cmsis-csolution.getBinaryFiles}",
+            "cmsisPack": "${command:cmsis-csolution.getDfpName}",
+            "deviceName": "${command:cmsis-csolution.getDeviceName}",
+            "processorName": "${command:cmsis-csolution.getProcessorName}",
+            "workspaceFolder": "${workspaceFolder}/0\\tm4c123-keil",
+            "problemMatcher": []
+        }
+    ]
+}
