@@ -1,4 +1,10 @@
+This Mini RTOS was created with the guidance of the course by Miros from Quantum Leaps Youtube course
+https://www.state-machine.com/video-course
+
 # Sub-directories in this lesson:
+NOTE: mssing qpc directory for  the RTOS that uses semaphores and more advance applications
+
+
 ```
 |
 +---CMSIS           - CMSIS (Cortex Microcontroller Software Interface Standard)
