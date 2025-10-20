@@ -1,5 +1,5 @@
 /* Board Support Package (BSP) for the EK-TM4C123GXL board */
-#include "qpc.h"   // for the QXK kernel (part of QP/C)
+#include "qpc.h"
 #include "bsp.h"
 #include "TM4C123GH6PM.h" /* the TM4C MCU Peripheral Access Layer (TI) */
 
@@ -11,7 +11,11 @@
 /* on-board switch */
 #define BTN_SW1   (1U << 4)
 
-static uint32_t volatile l_tickCtr;
+//SEMA
+//static QXSemaphore Morse_sema;
+
+//MUTEX
+static QXMutex Morse_mutex;
 
 void SysTick_Handler(void) {
     QXK_ISR_ENTRY();  /* inform QXK about entering an ISR */
@@ -31,8 +35,14 @@ void GPIOPortF_IRQHandler(void) {
 }
 
 void BSP_init(void) {
-    SYSCTL->GPIOHBCTL |= (1U << 5); /* enable AHB for GPIOF */
     SYSCTL->RCGCGPIO  |= (1U << 5); /* enable Run Mode for GPIOF */
+    SYSCTL->GPIOHBCTL |= (1U << 5); /* enable AHB for GPIOF */
+
+    /* make sure the Run Mode and AHB-enable take effects
+    * before accessing the peripherals
+    */
+    __ISB(); /* Instruction Synchronization Barrier */
+    __DSB(); /* Data Memory Barrier */
 
     GPIOF_AHB->DIR |= (LED_RED | LED_BLUE | LED_GREEN);
     GPIOF_AHB->DEN |= (LED_RED | LED_BLUE | LED_GREEN);
@@ -47,6 +57,15 @@ void BSP_init(void) {
     GPIOF_AHB->IBE &= ~BTN_SW1; /* only one edge generate the interrupt */
     GPIOF_AHB->IEV &= ~BTN_SW1; /* a falling edge triggers the interrupt */
     GPIOF_AHB->IM  |= BTN_SW1;  /* enable GPIOF interrupt for SW1 */
+
+    //SEMA
+    ///* initialize the Morse_sema semaphore as binary, resource semaphore */
+    //QXSemaphore_init(&Morse_sema, /* pointer to semaphore to initialize */
+    //                 1U,  /* initial semaphore count (resource semaphore) */
+    //                 1U); /* maximum semaphore count (binary semaphore) */
+
+    //MUTEX
+    QXMutex_init(&Morse_mutex, 6U); /* priority ceiling 6 */
 }
 
 void BSP_ledRedOn(void) {
@@ -65,12 +84,74 @@ void BSP_ledBlueOff(void) {
     GPIOF_AHB->DATA_Bits[LED_BLUE] = 0U;
 }
 
+void BSP_ledBlueToggle(void) {
+    //CRIT
+    QF_CRIT_STAT
+
+    QF_CRIT_ENTRY();
+    GPIOF_AHB->DATA ^= LED_BLUE;
+    QF_CRIT_EXIT();
+}
+
 void BSP_ledGreenOn(void) {
     GPIOF_AHB->DATA_Bits[LED_GREEN] = LED_GREEN;
 }
 
 void BSP_ledGreenOff(void) {
     GPIOF_AHB->DATA_Bits[LED_GREEN] = 0U;
+}
+
+void BSP_ledGreenToggle(void) {
+    //CRIT
+    QF_CRIT_STAT
+
+    QF_CRIT_ENTRY();
+    GPIOF_AHB->DATA ^= LED_GREEN;
+    QF_CRIT_EXIT();
+}
+
+void BSP_sendMorseCode(uint32_t bitmask) {
+    uint32_t volatile delay_ctr;
+    enum { DOT_DELAY = 150 };
+
+    //LOCK
+    //QSchedStatus sstat;
+
+    //SEMA
+    //QXSemaphore_wait(&Morse_sema,  /* pointer to semaphore to wait on */
+    //                 QXTHREAD_NO_TIMEOUT); /* timeout for waiting */
+
+    //LOCK
+    //sstat = QXK_schedLock(5U); /* priority ceiling 5 */
+
+    //MUTEX
+    QXMutex_lock(&Morse_mutex,
+                 QXTHREAD_NO_TIMEOUT); /* timeout for waiting */
+
+    for (; bitmask != 0U; bitmask <<= 1) {
+        if ((bitmask & (1U << 31)) != 0U) {
+            BSP_ledGreenOn();
+        }
+        else {
+            BSP_ledGreenOff();
+        }
+        for (delay_ctr = DOT_DELAY;
+             delay_ctr != 0U; --delay_ctr) {
+        }
+    }
+    BSP_ledGreenOff();
+    for (delay_ctr = 7*DOT_DELAY;
+         delay_ctr != 0U; --delay_ctr) {
+    }
+
+    //SEMA
+    //QXSemaphore_signal(&Morse_sema);  /* pointer to semaphore to signal */
+
+    //LOCK
+    //QXK_schedUnlock(sstat);
+
+    //MUTEX
+    QXMutex_unlock(&Morse_mutex);
 }
 
 /* callbacks ---------------------------------------------------------------*/
@@ -88,24 +169,17 @@ void QF_onStartup(void) {
 /*..........................................................................*/
 void QF_onCleanup(void) {
 }
-/*..........................................................................*/
+
 void QXK_onIdle(void) {
     GPIOF_AHB->DATA_Bits[LED_RED] = LED_RED;
     GPIOF_AHB->DATA_Bits[LED_RED] = 0U;
     //__WFI(); /* stop the CPU and Wait for Interrupt */
 }
 
-//............................................................................
-_Noreturn void Q_onAssert(char const * const module, int const id) {
-    (void)module; // unused parameter
-    (void)id;     // unused parameter
-#ifndef NDEBUG
-    // light up all LEDs
-    GPIOF_AHB->DATA_Bits[LED_GREEN | LED_RED | LED_BLUE] = 0xFFU;
-    // for debugging, hang on in an endless loop...
-    for (;;) {
-    }
-#endif
+void Q_onAssert(char const *module, int loc) {
+    /* TBD: damage control */
+    (void)module; /* avoid the "unused parameter" compiler warning */
+    (void)loc;    /* avoid the "unused parameter" compiler warning */
     NVIC_SystemReset();
 }
 //............................................................................

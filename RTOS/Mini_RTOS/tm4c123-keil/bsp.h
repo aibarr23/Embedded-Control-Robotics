@@ -11,9 +11,13 @@ void BSP_ledRedOff(void);
 
 void BSP_ledBlueOn(void);
 void BSP_ledBlueOff(void);
+void BSP_ledBlueToggle(void);
 
 void BSP_ledGreenOn(void);
 void BSP_ledGreenOff(void);
+void BSP_ledGreenToggle(void);
+
+void BSP_sendMorseCode(uint32_t bitmask);
 
 extern QXSemaphore SW1_sema;
 
