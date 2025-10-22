@@ -2,65 +2,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "CMSIS_DAP@pyOCD (launch)",
-            "type": "gdbtarget",
+            "name": "CMSIS-DAP@Arm-Debugger (launch)",
+            "type": "arm-debugger",
             "request": "launch",
-            "cwd": "${workspaceFolder}/RTOS\\1\\Blank_solution",
-            "program": "out\\Project0\\TM4C123GH6PM\\Debug\\Project0.axf",
-            "gdb": "arm-none-eabi-gdb",
-            "preLaunchTask": "CMSIS Load",
-            "initCommands": [
-                "monitor reset halt",
-                "tbreak main"
-            ],
-            "customResetCommands": [
-                "monitor reset halt",
-                "tbreak main",
-                "continue"
-            ],
-            "target": {
-                "server": "pyocd",
-                "serverParameters": [
-                    "gdbserver",
-                    "--probe",
-                    "cmsisdap:",
-                    "--connect",
-                    "attach",
-                    "--cbuild-run",
-                    "${command:cmsis-csolution.getCbuildRunFile}",
-                    "--quiet",
-                    "--log",
-                    "*.cbuild_run,*server=info"
-                ],
-                "port": "3333"
-            },
-            "cmsis": {
-                "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
-                "updateConfiguration": "auto"
-            }
-        },
-        {
-            "name": "CMSIS_DAP@pyOCD (attach)",
-            "type": "gdbtarget",
-            "request": "attach",
-            "cwd": "${workspaceFolder}/RTOS\\1\\Blank_solution",
-            "program": "out\\Project0\\TM4C123GH6PM\\Debug\\Project0.axf",
-            "gdb": "arm-none-eabi-gdb",
-            "initCommands": [
-                ""
-            ],
-            "customResetCommands": [
-                "monitor reset halt",
-                "tbreak main",
-                "continue"
-            ],
-            "target": {
-                "port": "3333"
-            },
-            "cmsis": {
-                "cbuildRunFile": "${command:cmsis-csolution.getCbuildRunFile}",
-                "updateConfiguration": "auto"
-            }
+            "connectionAddress": "${command:device-manager.getSerialNumber}",
+            "connectionType": "CMSIS-DAP",
+            "programs": "${command:cmsis-csolution.getBinaryFiles}",
+            "cmsisPack": "${command:cmsis-csolution.getDfpName}",
+            "deviceName": "${command:cmsis-csolution.getDeviceName}",
+            "processorName": "${command:cmsis-csolution.getProcessorName}",
+            "workspaceFolder": "${workspaceFolder}/RTOS\\0\\tm4c123-keil"
         }
     ]
 }
