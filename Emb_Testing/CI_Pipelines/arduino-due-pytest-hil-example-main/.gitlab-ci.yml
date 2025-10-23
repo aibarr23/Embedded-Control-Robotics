@@ -1,0 +1,66 @@
+stages:
+  - build
+  - load
+  - test
+
+# Script: Build docker image
+docker_build:
+  stage: build
+  image: registry.gitlab.com/ci-cd-examples/docker-buildx
+  variables:
+    IMAGE_TAG: $CI_REGISTRY_IMAGE:latest
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+  services:
+    - docker:dind
+  script:
+    # Build multi-arch image using buildx
+    - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+    - docker buildx create --use
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker buildx build --push --platform linux/arm/v7,linux/amd64 -t $IMAGE_TAG .
+  rules:
+    - changes:
+      - Dockerfile
+
+arduino_load_firmware:
+  stage: load
+  image: $CI_REGISTRY_IMAGE:latest
+  tags:
+    - hil-runner
+  script:
+    # Compile the Arduino code and load it onto the target device
+    - python3 -m pytest -s test_arduino_load.py --junitxml=testLog.xml
+  artifacts:
+    when: always
+    paths:
+      - testLog.xml
+    reports:
+      junit: 
+        - testLog.xml
+  except:
+      changes:
+        - "README.md"
+
+arduino_hil_test:
+  stage: test
+  image: registry.gitlab.com/docker-embedded/analog-discovery-2-on-raspberry-pi-4
+  tags:
+    - hil-runner
+  script:
+    # Install dependencies and grab library files
+    - pip3 install -r requirements.txt
+    - cp /AD2.py .
+
+    # Run the HIL test
+    - python3 -m pytest -s test_arduino_hil.py --junitxml=testLog.xml
+  artifacts:
+    when: always
+    paths:
+      - testLog.xml
+    reports:
+      junit: 
+        - testLog.xml
+  except:
+      changes:
+        - "README.md"
