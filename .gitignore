@@ -14068,3 +14068,10 @@ Emb_Testing/Embedded_Test/U-Test/img/logo_et.png
 Emb_Testing/Embedded_Test/U-Test/img/NUCLEO-C031C6.png
 ZEPHYR_RTOS/.west/manifest-tmp
 ZEPHYR_RTOS/.west/manifest-tmp
+Firmware/BareMetalSeries/.vscode/.cortex-debug.registers.state.json
+Firmware/BareMetalSeries/.vscode/c_cpp_properties.json
+Firmware/BareMetalSeries/.vscode/launch.json
+Firmware/BareMetalSeries/.vscode/settings.json
+Firmware/BareMetalSeries/.vscode/tasks.json
+Firmware/BareMetalSeries/.vscode/jlink/power-off.jlink
+Firmware/BareMetalSeries/.vscode/jlink/power-on.jlink
