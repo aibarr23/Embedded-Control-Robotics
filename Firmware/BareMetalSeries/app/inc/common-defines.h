@@ -4,4 +4,4 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#endif // INC_COMMON_DEFINES_H
+#endif /* INC_COMMON_DEFINES_H */
