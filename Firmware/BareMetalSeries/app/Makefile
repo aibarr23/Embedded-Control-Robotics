@@ -8,8 +8,8 @@ endif
 SRC_DIR        = src
 INC_DIR        = inc
 OPENCM3_DIR    = ../libopencm3
-# SHARED_SRC_DIR = ../shared/src
-# SHARED_INC_DIR = ../shared/inc
+SHARED_SRC_DIR = ../shared/src
+SHARED_INC_DIR = ../shared/inc
 
 BINARY = firmware
 
@@ -33,7 +33,7 @@ LDFLAGS		+= -L$(OPENCM3_DIR)/lib
 
 DEFS		+= -I$(OPENCM3_DIR)/include
 DEFS		+= -I$(INC_DIR)
-# DEFS		+= -I$(SHARED_INC_DIR)
+DEFS		+= -I$(SHARED_INC_DIR)
 
 ###############################################################################
 # Executables
