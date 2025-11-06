@@ -29,4 +29,10 @@ void system_setup(void){
     systick_setup();
 }
 
+void system_delay(uint64_t milleseconds){
+  uint64_t end_time = system_get_ticks() + milleseconds;
+  while (system_get_ticks() < end_time){
+    // Spin
+  }
+}
 
