@@ -5,11 +5,11 @@ Q		:= @
 NULL		:= 2>/dev/null
 endif
 
-SRC_DIR							= src
-INC_DIR							= inc
-SHARED_SRC_DIR			= ../shared/src
-SHARED_INC_DIR			= ../shared/inc
-OPENCM3_DIR					= ../libopencm3
+SRC_DIR				= src
+INC_DIR				= inc
+SHARED_SRC_DIR		= ../shared/src
+SHARED_INC_DIR		= ../shared/inc
+OPENCM3_DIR			= ../libopencm3
 
 BINARY = bootloader
 
